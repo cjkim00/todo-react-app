@@ -1,0 +1,12 @@
+.listElement--div {
+    margin: 0;
+    background-color: bisque;
+    margin-bottom: 10px;
+}
+
+.todoList--div {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width:20%;
+}
