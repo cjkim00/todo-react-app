@@ -11,11 +11,6 @@ function App() {
 
   return (
     <div className="app--div">
-      <Header 
-        data={data}
-        setData={setData}
-      />
-
       <div className="app--todo--container">
         <TodoList 
           data={data}

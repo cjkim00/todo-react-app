@@ -43,7 +43,8 @@ export default function NewTodo(props) {
                 value={inputData.nameText}
             />
 
-            <input type="text" 
+            <input 
+                type="text" 
                 className="newTodo--input--description" 
                 name="description"
                 onChange={handleChange}

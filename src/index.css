@@ -1,13 +1,14 @@
 .app--div {
-    background-color: aqua;
-    display:block;
+    /*background-color: aqua;*/
+    display:flex;
+    border-style: solid;
 }
 
 .app--todo--container {
     display:flex;
     flex-direction: row;
     width: 100%;
-    background-color: green;
+    
 }
 
 .listElement--div {
@@ -16,7 +17,7 @@
     border-style: solid;
     border-radius: 5px;
     border-width: thin;
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 .todoList--div {
@@ -24,48 +25,55 @@
     min-width: 200px;
     max-height: 97vh;
     overflow-y: scroll;
-    background-color: bisque;
+    /*background-color: bisque;*/
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .todoList--box {
     display: flex;
-    background-color: orange;
+    /*background-color: orange;*/
     width: calc(50vw + 100px);
     height: 100vh;
+    border-style: solid;
 }
 
 .todoList--second {
     margin-left: 10px;
-    background-color: brown;
+    /*background-color: brown;*/
     width:100%;
+    border-style: solid;
 }
 
 .listElement--name {
     margin: 0px;
     margin-left: 5px;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 }
 
 .listElement--description {
     border: 0;
-    background-color:blueviolet;
+    /*background-color:blueviolet;*/
 }
 
 .header--div {
-    background-color: red;
+    /*background-color: red;*/
     justify-content: right;
 }
 
 .header--new--button {
     margin: 0;
-    background-color: gray;
+    /*background-color: gray;*/
 }
 
 .newTodo--div {
     margin: 0;
-    
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    width: calc(50vw + 100px);
+    margin-left: 1px;
 }
 
 ::-webkit-scrollbar {
