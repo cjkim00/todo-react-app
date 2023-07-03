@@ -1,12 +1,73 @@
+.app--div {
+    background-color: aqua;
+    display:block;
+}
+
+.app--todo--container {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: green;
+}
+
 .listElement--div {
     margin: 0;
-    background-color: bisque;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    background-color: blue;
 }
 
 .todoList--div {
-    background-color: aqua;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 97vh;
+    overflow-y: scroll;
+    background-color: bisque;
     display: flex;
     flex-direction: column;
-    width:20%;
+}
+
+.todoList--box {
+    display: flex;
+    background-color: orange;
+    width: calc(50vw + 100px);
+    height: 100vh;
+}
+
+.todoList--second {
+    margin-left: 10px;
+    background-color: brown;
+    width:100%;
+}
+
+.listElement--name {
+    margin: 0px;
+    margin-left: 5px;
+    background-color: aquamarine;
+}
+
+.listElement--description {
+    border: 0;
+    background-color:blueviolet;
+}
+
+.header--div {
+    background-color: red;
+    justify-content: right;
+}
+
+.header--new--button {
+    margin: 0;
+    background-color: gray;
+}
+
+.newTodo--div {
+    margin: 0;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
