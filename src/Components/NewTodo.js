@@ -10,19 +10,26 @@ export default function NewTodo(props) {
 
     function buttonPressed() {
         const tempData = {name : inputData.nameText, description : inputData.description}
-         //props.data.push({name : "test element",  description: "This is a test element"})
-         
-         props.setData(data => {
-            return [...data, tempData]
-            }
+        if(tempData.name.length === 0 || tempData.description.length === 0) {
+            console.log("length 0")
+        } else {
+            props.setData(data => {
+                const temp = [...data, tempData]
+                props.setDataState(temp)
+                return temp
+                }
+            )
             
-         )
+            setInputData({nameText: "", description: ""})
+
+        }
+        
+         
          
     }
 
     function handleChange(event) {
         event.preventDefault(inputData)
-        //console.log(inputData)
         const {name, value, type} = event.target
         setInputData(prevData => {
             return {
@@ -41,9 +48,10 @@ export default function NewTodo(props) {
                 name="nameText"
                 onChange={handleChange}
                 value={inputData.nameText}
+                maxLength={100}
             />
 
-            <input 
+            <textarea 
                 type="text" 
                 className="newTodo--input--description" 
                 name="description"
@@ -55,6 +63,7 @@ export default function NewTodo(props) {
         </div>
     )
 }
+
 
 /*
 export defualt function NewTodo(props) {
